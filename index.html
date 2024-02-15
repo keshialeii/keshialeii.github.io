@@ -1,0 +1,164 @@
+<!-- Keshia Lei M. Gayoso | UV2L -->
+<!DOCTYPE html>
+ 
+<html>
+  <head>
+    <title>CMSC 100 Exer 2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans"> <!-- For Merriweather font -->
+    <style>
+        .flex-container { /*style for main container*/
+            display: flex;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 25px;
+            border-color: black;
+            padding: 14px 16px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .flex-img { /*stle for images*/
+            flex: 100%;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .flex-textbox { /*style for text boxes*/
+            width: 500px;
+            flex-wrap: wrap;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #3C3633;
+            padding: 14px 16px;
+        }
+
+        .flex-footer { /*style for footer*/
+            display: flex;
+            justify-content : flex-start;
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 25px;
+            background-color: #747264;
+            padding: 14px 16px;
+            color: #EEEDEB;
+        }
+
+        .topnav { /*style for top navigation*/
+          background-color: #747264;
+        }
+
+        .topnav a { /*initializing anchor link*/
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .backToTop a { /*back to top anchor link*/
+            color: #f2f2f2;
+            background-color: #3C3633;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover { /*hover style for navigation boxes*/
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active { /*style for current page*/
+            background-color: #3C3633;
+            color: white;
+        }
+
+
+        h1{ /*style for header 1*/
+            flex: 100%;
+            font-family: Merriweather, serif;
+            font-size: 20px;
+            padding: 14px 16px;
+            background-color: #3C3633;
+            color: #EEEDEB;
+        }
+
+        p{ /*style for body text*/
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+        }
+
+        hr {
+            flex: 100%;
+            border-width: 3px;
+            border-color: #3C3633;
+        }
+
+    </style>
+
+  </head>
+
+  <body style="background-color:#F9EFDB;">
+    <div class="flex-container">
+        <div class="flex-img"> <!-- top logo -->
+            <img src="magsuno.png" height="100px" id="top">
+        </div>
+
+        <div class="topnav"> <!-- navigation bar -->
+          <a class="active" href="#home">Home</a>
+          <a href="#projects">Previous Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#autobiography">Autobiography</a>
+          <a href="#footer">Footer</a>
+        </div>
+
+        <hr>
+        <div class="flex-img"> 
+            <img src="lei1.jpg" width="400px" >
+        </div>
+        <!-- <div class="flex-img"> -->
+            <h1 id="projects"> Previous Projects </h1>
+
+            <div class="flex-textbox"> 
+                <img src="proj4.png" height="250px">
+                <p> FlaRio is a casual-platformer game inspired by the infamous Flappy Bird and Super Mario Bros. </p>
+             </div>
+
+            <div class="flex-textbox"> 
+                <img src="proj5.png" height="250px">
+                <p> This is an interactive Polynomial Regression Solver. An nth-degree polynomial in x is used in polynomial regression to characterize the connection between the independent variable x and the dependent variable y.</p>
+             </div>            
+            
+        <div class="flex-textbox"> 
+            <h1 id="skills"> Skills </h1>
+            <p>
+                In 2022, our capstone research involves the use of Arduino in developing a speeding alarm prototype for unsignalized roads. I have experience on creating an interactive web application using R Shiny that involves general solvers for Minimization problems, Polynomial Regression, and Quadratic Spline Interpolation. I have also contributed in creating the graphics of our Final project in CMSC 22 where we developed a game called FlaRio using Java.
+            </p>
+        </div>
+        <div class="flex-textbox"> 
+            <h1 id="autobiography"> Autobiography </h1>
+            <p>
+                Keshia Lei M. Gayoso is a student from the College of Arts and Sciences under the degree program
+                BS Computer Science. She is currently a Sophomore in the University of the Philippines Los Banos. She is also one of the owners of the Magsuno Shop who spearheads projects that aim to raise funds for Aeta communities situated in Pampanga, thus the logo in this page.
+            </p>
+        </div>
+    </div>
+    <div class="flex-footer" id="footer"> <!-- footer -->
+        <img src="magsuno.png" height="100px">
+        <p>Imus, Cavite
+        <br>
+        kmgayoso@up.edu.ph 
+        <br>
+        ©Lei Gayoso 2024</p>
+        <div class="backToTop">
+            <a href="#top">Back to top</a>
+        </div>
+    </div>
+  </body>
+
+</html>
